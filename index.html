@@ -591,6 +591,8 @@ body { padding-bottom: 64px; }
 @keyframes mbEntra { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 .mb-titulo { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.18rem; color: var(--accent-cyan); margin: 0 0 14px; display: flex; align-items: center; gap: 9px; }
 .mb-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.mb-cols > * { min-width: 0; }
+.mb-cols > .mb-act, .mb-cols > details { grid-column: 1 / -1; }
 .mb-izq p { font-size: 1rem; line-height: 1.65; margin: 0 0 12px; }
 .mb-izq p:last-child { margin-bottom: 0; }
 .mb-izq ol, .mb-izq ul { margin: 10px 0 12px 20px; }
@@ -988,8 +990,9 @@ body { padding-bottom: 64px; }
 
 
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de Box Model — separá y aireá las tarjetas</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de Box Model — separá y aireá las tarjetas</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En la clase <code class="inline">.tarjeta</code>, agregá <code class="inline">padding: 18px;</code> para que el texto respire dentro del borde.</li>
           <li>En la misma clase, agregá <code class="inline">margin: 12px;</code> para separar las tarjetas entre sí.</li>
@@ -1024,9 +1027,11 @@ body { padding-bottom: 64px; }
           <div class="preview-out" id="preview-s1" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
-  <div class="actividad">
-        <div class="act-title">🎯 RETO: centrá y aireá una tarjeta</div>
+  <details class="acordeon">
+        <summary>🎯 RETO: centrá y aireá una tarjeta</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.pagina</code>, agregá <code class="inline">margin: 0 auto;</code> para centrar el contenedor (ya tiene un width definido).</li>
           <li>En <code class="inline">.titulo</code>, agregá <code class="inline">padding: 15px 20px;</code> (2 valores: arriba/abajo y costados).</li>
@@ -1071,6 +1076,7 @@ body { padding-bottom: 64px; }
           <div class="preview-out" id="preview-s1b" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 
@@ -1217,8 +1223,9 @@ body { padding-bottom: 64px; }
 
 
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de Tamaño — una imagen que no se desborda</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de Tamaño — una imagen que no se desborda</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En la clase <code class="inline">.foto</code>, agregá <code class="inline">max-width: 100%;</code> para que nunca sea más ancha que su contenedor.</li>
           <li>Ejecutá y confirmá que la foto ahora cabe dentro del recuadro, sin desbordarse.</li>
@@ -1258,6 +1265,7 @@ body { padding-bottom: 64px; }
           <div class="preview-out" id="preview-s2" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 <!-- ════════════════ SECCIÓN 3 · 🔲 PROPIEDADES DE BORDES ════════════════ -->
@@ -1432,8 +1440,9 @@ body { padding-bottom: 64px; }
     </div>
   </div>
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de Bordes — convertí un cuadrado en avatar</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de Bordes — convertí un cuadrado en avatar</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.avatar</code>, agregá <code class="inline">border-radius: 50%;</code> para convertir el cuadrado en un círculo.</li>
           <li>En <code class="inline">.boton</code>, agregá <code class="inline">border: 2px solid #00f5ff;</code>.</li>
@@ -1478,6 +1487,7 @@ body { padding-bottom: 64px; }
           <div class="preview-out" id="preview-s3" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 
@@ -1623,8 +1633,9 @@ body { padding-bottom: 64px; }
     </div>
   </div>
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de Unidades — una portada a pantalla completa</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de Unidades — una portada a pantalla completa</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.hero</code>, agregá <code class="inline">height: 60vh;</code> para que la portada ocupe el 60% de la altura de la pantalla.</li>
           <li>En <code class="inline">h1</code>, agregá <code class="inline">font-size: 2rem;</code> para que el título escale con la fuente de la página.</li>
@@ -1663,6 +1674,7 @@ h1 {
           <div class="preview-out" id="preview-s4" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 <!-- ════════════════ SECCIÓN 5 · 🧱 LA PROPIEDAD display ════════════════ -->
@@ -1867,8 +1879,9 @@ h1 {
     </div>
   </div>
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de display — armá una barra de navegación</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de display — armá una barra de navegación</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.menu</code>, agregá <code class="inline">display: flex;</code> para poner los enlaces en fila.</li>
           <li>En la misma clase, agregá <code class="inline">gap: 18px;</code> para separarlos entre sí.</li>
@@ -1908,6 +1921,7 @@ h1 {
           <div class="preview-out" id="preview-s5" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 
@@ -2050,8 +2064,9 @@ h1 {
     </div>
   </div>
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de float — texto que rodea una foto</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de float — texto que rodea una foto</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.foto</code>, agregá <code class="inline">float: left;</code> para que la foto flote y el texto la rodee.</li>
           <li>En <code class="inline">.nota</code>, agregá <code class="inline">overflow: hidden;</code> para que el contenedor no colapse.</li>
@@ -2095,6 +2110,7 @@ h1 {
           <div class="preview-out" id="preview-s6" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 <!-- ════════════════ SECCIÓN 7 · 📌 POSICIONAMIENTO ════════════════ -->
@@ -2302,8 +2318,9 @@ h1 {
     </div>
   </div>
 
-  <div class="actividad">
-        <div class="act-title">🎯 PRÁCTICA de Posicionamiento — un globo "NUEVO" en la esquina</div>
+  <details class="acordeon">
+        <summary>🎯 PRÁCTICA de Posicionamiento — un globo "NUEVO" en la esquina</summary>
+        <div class="acordeon-body">
         <ol class="act-consigna">
           <li>En <code class="inline">.tarjeta</code>, agregá <code class="inline">position: relative;</code> para que sea la referencia del globo.</li>
           <li>En <code class="inline">.globo</code>, agregá <code class="inline">position: absolute;</code> (ya tiene top y right definidos).</li>
@@ -2347,6 +2364,7 @@ h1 {
           <div class="preview-out" id="preview-s7" aria-live="polite"></div>
         </div>
       </div>
+      </details>
 
 </section>
 
@@ -2379,7 +2397,9 @@ h1 {
     <div class="flujo-paso"><span class="fp-num">6</span><p>📥 Ejecutá, ajustá y descargá tu trabajo.</p></div>
   </div>
 
-  <h3 id="t-simulador">💻 Tu simulador</h3>
+  <details class="acordeon" id="t-simulador">
+  <summary>💻 Tu simulador</summary>
+  <div class="acordeon-body">
   <p>El HTML ya está armado con todo lo que necesitás para la misión: vos ponés el CSS. Tab inserta 2 espacios.</p>
   <ol class="act-consigna">
     <li>En <code class="inline">.tarjeta-producto</code>, agregá <code class="inline">padding</code> y <code class="inline">margin</code> para darle aire por dentro y por fuera.</li>
@@ -2421,6 +2441,8 @@ h1 {
     </div>
     <div class="preview-out" id="preview-s8" aria-live="polite"></div>
   </div>
+  </div>
+  </details>
 
 </section>
 
